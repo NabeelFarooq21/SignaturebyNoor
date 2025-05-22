@@ -1,996 +1,1146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Signature By Noor</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <meta content="Author" name="WebThemez" />
+    <!-- Favicons -->
+    <link href="SIGBYNOOR2-removebg-preview.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Signature By Noor</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <meta content="Author" name="WebThemez">
-  <!-- Favicons -->
-  <link href="SIGBYNOOR2-removebg-preview.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
-    rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Magnific Popup CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <!-- Include Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Include Magnific Popup CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <!-- Include Magnific Popup JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
 
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <style>
-    /* Fixed portfolio display */
-    .row.photo-gallery {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .column {
-      flex: 33.33%;
-      max-width: 33.33%;
-      padding: 0 4px;
-    }
-
-    .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-      transition: all 0.3s ease;
-    }
-
-    .column img:hover {
-      opacity: 0.8;
-    }
-
-    /* Responsive layout */
-    @media screen and (max-width: 800px) {
-      .column {
-        flex: 50%;
-        max-width: 50%;
+    <style>
+      /* Fixed portfolio display */
+      .row.photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
       }
-    }
 
-    @media screen and (max-width: 600px) {
       .column {
-        flex: 100%;
-        max-width: 100%;
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 0 4px;
       }
-    }
 
-    /* Deal items */
-    .services-item {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 30px;
-      border-radius: 5px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
 
-    .services-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: all 0.3s ease;
-    }
+      .column img:hover {
+        opacity: 0.8;
+      }
 
-    .services-overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.5);
-      opacity: 1;
-      transition: all 0.3s ease;
-    }
+      /* Responsive layout */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
 
-    .services-info h2 {
-      color: #fff;
-      text-align: center;
-      font-size: 1.5rem;
-      margin: 0;
-      padding: 15px;
-    }
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
 
-    .services-item:hover img {
-      transform: scale(1.1);
-    }
+      /* Deal items */
+      .services-item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
 
-    /*  */
-   /* Dark background for the services section */
-  /* Dark background for the services section */
-/* Dark background for the services section */
-/* Dark background for the services section */
-#gallery {
-  background-color: #0a0d17;
-  color: #fff;
-  padding: 60px 0;
-}
+      .services-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: all 0.3s ease;
+      }
 
-#gallery .section-header h2 {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 15px;
-  text-align: center;
-}
+      .services-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
 
-#gallery .section-header p {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 40px;
-}
+      .services-info h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 15px;
+      }
 
-/* Consistent gallery box sizes */
-.gallery-item {
-  height: 350px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  aspect-ratio: 3/4;
-}
+      .services-item:hover img {
+        transform: scale(1.1);
+      }
 
-.gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
+      /*  */
+      /* Dark background for the services section */
+      /* Dark background for the services section */
+      /* Dark background for the services section */
+      /* Dark background for the services section */
+      #gallery {
+        background-color: #0a0d17;
+        color: #fff;
+        padding: 60px 0;
+      }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
+      #gallery .section-header h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: center;
+      }
 
-.gallery-item:hover img {
-  transform: scale(1.05);
-}
+      #gallery .section-header p {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 40px;
+      }
 
-/* Fixed overlay to cover the entire box - always visible */
-.gallery-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Black semi-transparent - slightly darker */
-  padding: 20px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;              /* Always visible */
-  transition: all 0.3s ease;
-  pointer-events: auto;    /* Always interactive */
-}
+      /* Consistent gallery box sizes */
+      .gallery-item {
+        height: 350px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        aspect-ratio: 3/4;
+      }
 
-/* Slight enhancement on hover */
-.gallery-item:hover .gallery-overlay {
-  background: rgba(0, 0, 0, 0.75); /* Slightly darker on hover */
-}
+      .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
 
-.gallery-info {
-  text-align: center;
-  width: 100%;
-  z-index: 2;
-  transform: translateY(0);
-  transition: transform 0.3s ease;
-}
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
 
-.gallery-item:hover .gallery-info {
-  transform: translateY(-5px); /* Slight lift on hover */
-}
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
 
-.gallery-info h2 {
-  color: #fff;
-  font-size: 22px;
-  margin-bottom: 15px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  letter-spacing: 0.5px;
-}
+      /* Fixed overlay to cover the entire box - always visible */
+      .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Black semi-transparent - slightly darker */
+        padding: 20px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1; /* Always visible */
+        transition: all 0.3s ease;
+        pointer-events: auto; /* Always interactive */
+      }
 
-/* Pink label styling for categories */
-.gallery-label {
-  background-color: #ff49b7;
-  color: white;
-  padding: 6px 18px;
-  border-radius: 4px;
-  margin-top: 10px;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 16px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
+      /* Slight enhancement on hover */
+      .gallery-item:hover .gallery-overlay {
+        background: rgba(0, 0, 0, 0.75); /* Slightly darker on hover */
+      }
 
-/* Equal sizing for boxes */
-#gallery .row {
-  display: flex;
-  flex-wrap: wrap;
-}
+      .gallery-info {
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+      }
 
-#gallery .col-lg-4 {
-  display: flex;
-  flex-direction: column;
-}
+      .gallery-item:hover .gallery-info {
+        transform: translateY(-5px); /* Slight lift on hover */
+      }
 
-#gallery .col-lg-4 .gallery-item {
-  flex: 1;
-}
+      .gallery-info h2 {
+        color: #fff;
+        font-size: 22px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        letter-spacing: 0.5px;
+      }
 
-/* Responsive adjustments */
-@media (max-width: 991px) {
-  .gallery-item {
-    height: 300px;
-  }
-}
+      /* Pink label styling for categories */
+      .gallery-label {
+        background-color: #ff49b7;
+        color: white;
+        padding: 6px 18px;
+        border-radius: 4px;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
 
-@media (max-width: 767px) {
-  .gallery-item {
-    height: 250px;
-  }
+      /* Equal sizing for boxes */
+      #gallery .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-  .gallery-info h2 {
-    font-size: 18px;
-  }
-}
+      #gallery .col-lg-4 {
+        display: flex;
+        flex-direction: column;
+      }
 
-/* Hidden galleries for Magnific Popup */
-[class^="gallery-collection-"] {
-  display: none;
-}
-  </style>
-</head>
+      #gallery .col-lg-4 .gallery-item {
+        flex: 1;
+      }
 
-<body id="body">
+      /* Responsive adjustments */
+      @media (max-width: 991px) {
+        .gallery-item {
+          height: 300px;
+        }
+      }
 
-  <!--==========================
+      @media (max-width: 767px) {
+        .gallery-item {
+          height: 250px;
+        }
+
+        .gallery-info h2 {
+          font-size: 18px;
+        }
+      }
+
+      /* Hidden galleries for Magnific Popup */
+      [class^="gallery-collection-"] {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body id="body">
+    <!--==========================
     Top Bar
   ============================-->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">name@websitename.com</a>
-        <p><a href="https://wa.me/+923187555002" target="_blank">+92 318 7555002</a></p>
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto"><span>S</span>ignature by Noor</a></h1>
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#gallery">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#price">Price</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <button>
-            <li><a href="https://wa.me/+923187555002" target="_blank"><i class="fa fa-whatsapp"></i>WhatsApp Here</a>
-            </li>
-          </button>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
-
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-
-    <div class="intro-content">
-      <h2><span>Hair & Skin Care</span><br>Best Salon in City</h2>
-      <div>
-        <a href="#services" class="btn-get-started scrollto">OFFERS</a>
-      </div>
-    </div>
-    <!-- <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div> -->
-  </section><!-- #intro -->
-
-  <main id="main">
-
-    <!--==========================
-      Services Section
-    ============================-->
-
- 
-
-<section id="gallery" class="wow fadeInUp sec-padding">
-  <div class="container">
-    <div class="section-header">
-      <h2>OUR Services</h2>
-      <p>Experience the artistry of <b>Signature by Noor</b> through our stunning portfolio. Browse through our collection showcasing exceptional beauty transformations and professional services.</p>
-    </div>
-
-    <div class="row" id="gallery-container">
-      <!-- Gallery items will be inserted here by JavaScript -->
-    </div>
-  </div>
-</section>
-
-
-    <!--==========================
-      Price Section
-    ============================-->
-<div class="carousel-container" id="price" style=" margin-top: 50px; margin-bottom: 50px;">
-        <h2 class="carousel-title">Our Price List</h2>
-        
-        <div class="carousel-wrapper">
-            <button class="nav-button nav-prev" onclick="moveSlide(-1)">‹</button>
-            <button class="nav-button nav-next" onclick="moveSlide(1)">›</button>
-            
-            <div class="carousel-track" id="carouselTrack">
-                <div class="carousel-card" onclick="openModal(0)">
-                    <img src="./New folder (2)/APSI7138.JPG" alt="Men's Haircut Package">
-                    <div class="card-overlay">
-                        <div class="card-title">Men's Premium Cut</div>
-                        <div class="card-price">$45 - $65</div>
-                    </div>
-                </div>
-                
-                <div class="carousel-card" onclick="openModal(1)">
-                    <img src="./PORTFOLIO/1 (10).jpg" alt="Men's Styling Package">
-                    <div class="card-overlay">
-                        <div class="card-title">Styling & Beard Trim</div>
-                        <div class="card-price">$35 - $55</div>
-                    </div>
-                </div>
-                
-                <div class="carousel-card" onclick="openModal(2)">
-                    <img src="./img/services/1.jpg" alt="Men's Grooming Package">
-                    <div class="card-overlay">
-                        <div class="card-title">Complete Grooming</div>
-                        <div class="card-price">$75 - $95</div>
-                    </div>
-                </div>
-                
-                <div class="carousel-card" onclick="openModal(3)">
-                    <img src="./img/services/2.jpg" alt="Men's Color Package">
-                    <div class="card-overlay">
-                        <div class="card-title">Hair Coloring</div>
-                        <div class="card-price">$60 - $85</div>
-                    </div>
-                </div>
-                
-                <div class="carousel-card" onclick="openModal(4)">
-                    <img src="./img/services/3.jpg" alt="Men's Treatment Package">
-                    <div class="card-overlay">
-                        <div class="card-title">Hair Treatment</div>
-                        <div class="card-price">$50 - $70</div>
-                    </div>
-                </div>
-                
-                <div class="carousel-card" onclick="openModal(5)">
-                    <img src="./img/services/4.jpg" alt="Men's VIP Package">
-                    <div class="card-overlay">
-                        <div class="card-title">VIP Experience</div>
-                        <div class="card-price">$120 - $150</div>
-                    </div>
-                </div>
-            </div>
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container clearfix">
+        <div class="contact-info float-left">
+          <i class="fa fa-envelope-o"></i>
+          <a href="mailto:contact@example.com">name@websitename.com</a>
+          <p>
+            <a href="https://wa.me/+923187555002" target="_blank"
+              >+92 318 7555002</a
+            >
+          </p>
         </div>
-        
-        <div class="dots-container">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <img id="modalImage" src="" alt="Enlarged view">
-        </div>
-    </div>
-    
-
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="clients" class="wow fadeInUp sec-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2>Products</h2>
-          <p>We use only the highest quality products to ensure exceptional results. Our curated selection features
-            renowned brands trusted by professionals worldwide.</p>
-        </div>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.jpg" alt="">
-          <img src="img/clients/client-2.jpg" alt="">
-          <img src="img/clients/client-3.jpg" alt="">
-          <img src="img/clients/client-4.jpg" alt="">
-          <img src="img/clients/client-5.jpg" alt="">
-          <img src="img/clients/client-6.jpg" alt="">
-        </div>
-      </div>
-    </section><!-- #clients -->
-
-    <!--==========================
-      Our Portfolio Section
-    ============================-->
-    <section id="portfolio" class="wow fadeInUp sec-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Portfolio</h2>
-          <p>Browse through our collection of stunning transformations that showcase our expertise in makeup, hair
-            styling, and skin treatments. Each image represents our dedication to enhancing natural beauty.</p>
-        </div>
-      </div>
-
-      <div class="row photo-gallery">
-        <div class="column">
-          <img src="./New folder (2)/APSI7138.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/ERYI2630.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/GWLR9114.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/IMG_8419.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-        </div>
-        <div class="column">
-          <img src="./New folder (2)/IMG_8431.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/IMG_8493.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/IMG_8497.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/IMG_8498.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-        </div>
-        <div class="column">
-          <img src="./New folder (2)/RJMS5644.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/VNTQ3609.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/VVFM3662.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
-          <img src="./New folder (2)/XWTC7787.JPG" style="width:100%" class="portfolio-item wow fadeInUp">
+        <div class="social-links float-right">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
         </div>
       </div>
     </section>
-    <!-- #portfolio -->
 
     <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp sec-padding">
+    Header
+  ============================-->
+    <header id="header">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Get Our Service</h3>
-            <p class="cta-text">Your transformation begins here. Contact our beauty experts for a personalized
-              experience.</p>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a class="whatsapp" href="https://wa.me/+923187555002" target="_blank" style="border: none;"><i
-                class="fa fa-whatsapp"></i></a>
-          </div>
+        <div id="logo" class="pull-left">
+          <h1>
+            <a href="#body" class="scrollto"><span>S</span>ignature by Noor</a>
+          </h1>
+          <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#body">Home</a></li>
+            <li><a href="#gallery">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button>
+              <li>
+                <a href="https://wa.me/+923187555002" target="_blank"
+                  ><i class="fa fa-whatsapp"></i>WhatsApp Here</a
+                >
+              </li>
+            </button>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro">
+      <div class="intro-content">
+        <h2><span>Hair & Skin Care</span><br />Best Salon in City</h2>
+        <div>
+          <a href="#services" class="btn-get-started scrollto">OFFERS</a>
         </div>
       </div>
-    </section><!-- #call-to-action -->
+      <!-- <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div> -->
+    </section>
+    <!-- #intro -->
 
-    <!--==========================
-      Contact Section
+    <main id="main">
+      <!--==========================
+      Services Section
     ============================-->
-    <section id="contact" class="wow fadeInUp sec-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Allow us to curate your beauty experience. Reserve your private consultation.</p>
-        </div>
 
-        <div class="row contact-info">
-          <div class="col-lg-5">
-            <div class="contact-address">
-              <h3>Address <span><i class="ion-ios-location-outline"></i></span></h3>
-              <address>MN-12 Lincon Street, NewYork 12356, USA</address>
-            </div>
-            <div class="contact-phone">
-              <h3>Phone Number <span><i class="ion-ios-telephone-outline"></i></span></h3>
-              <p><a href="https://wa.me/+923187555002" target="_blank">+92 318 7555002</a></p>
-            </div>
-            <div class="contact-email">
-              <h3>Email <span><i class="ion-ios-email-outline"></i></span></h3>
-              <p><a href="mailto:info@example.com">name@website.com</a></p>
-            </div>
+      <section id="gallery" class="wow fadeInUp sec-padding">
+        <div class="container">
+          <div class="section-header">
+            <h2>OUR Services</h2>
+            <p>
+              Experience the artistry of <b>Signature by Noor</b> through our
+              stunning portfolio. Browse through our collection showcasing
+              exceptional beauty transformations and professional services.
+            </p>
           </div>
-          <div class="col-lg-7">
-            <div class="container">
-              <div class="form">
-                <!-- Form itself -->
-                <form name="sentMessage" class="well" id="contactForm" novalidate>
-                  <div class="control-group">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Full Name" id="name" required
-                        data-validation-required-message="Please enter your name" />
-                      <p class="help-block"></p>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="controls">
-                      <input type="email" class="form-control" placeholder="Email" id="email" required
-                        data-validation-required-message="Please enter your email" />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="controls">
-                      <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required
-                        data-validation-required-message="Please enter your message" minlength="5"
-                        data-validation-minlength-message="Min 5 characters" maxlength="999"
-                        style="resize:none"></textarea>
-                    </div>
-                  </div>
-                  <div id="success"> </div> <!-- For success/fail messages -->
-                  <button type="submit" class="btn btn-primary pull-right">Send</button><br />
-                </form>
+
+          <div class="row" id="gallery-container">
+            <!-- Gallery items will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!--==========================
+      Price Section
+    ============================-->
+      <div
+        class="carousel-container"
+        id="price"
+        style="margin-top: 50px; margin-bottom: 50px"
+      >
+        <h2 class="carousel-title">Our Price List</h2>
+
+        <div class="carousel-wrapper">
+          <button class="nav-button nav-prev" onclick="moveSlide(-1)">‹</button>
+          <button class="nav-button nav-next" onclick="moveSlide(1)">›</button>
+
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-card" onclick="openModal(0)">
+              <img
+                src="./New folder (2)/APSI7138.JPG"
+                alt="Men's Haircut Package"
+              />
+              <div class="card-overlay">
+                <div class="card-title">Men's Premium Cut</div>
+                <div class="card-price">$45 - $65</div>
+              </div>
+            </div>
+
+            <div class="carousel-card" onclick="openModal(1)">
+              <img src="./PORTFOLIO/1 (10).jpg" alt="Men's Styling Package" />
+              <div class="card-overlay">
+                <div class="card-title">Styling & Beard Trim</div>
+                <div class="card-price">$35 - $55</div>
+              </div>
+            </div>
+
+            <div class="carousel-card" onclick="openModal(2)">
+              <img src="./img/services/1.jpg" alt="Men's Grooming Package" />
+              <div class="card-overlay">
+                <div class="card-title">Complete Grooming</div>
+                <div class="card-price">$75 - $95</div>
+              </div>
+            </div>
+
+            <div class="carousel-card" onclick="openModal(3)">
+              <img src="./img/services/2.jpg" alt="Men's Color Package" />
+              <div class="card-overlay">
+                <div class="card-title">Hair Coloring</div>
+                <div class="card-price">$60 - $85</div>
+              </div>
+            </div>
+
+            <div class="carousel-card" onclick="openModal(4)">
+              <img src="./img/services/3.jpg" alt="Men's Treatment Package" />
+              <div class="card-overlay">
+                <div class="card-title">Hair Treatment</div>
+                <div class="card-price">$50 - $70</div>
+              </div>
+            </div>
+
+            <div class="carousel-card" onclick="openModal(5)">
+              <img src="./img/services/4.jpg" alt="Men's VIP Package" />
+              <div class="card-overlay">
+                <div class="card-title">VIP Experience</div>
+                <div class="card-price">$120 - $150</div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="dots-container">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
       </div>
 
-      <div class="container mb-4 map">
+      <!-- Modal -->
+      <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <img id="modalImage" src="" alt="Enlarged view" />
+        </div>
+      </div>
+
+      <!--==========================
+      Clients Section
+    ============================-->
+      <section id="clients" class="wow fadeInUp sec-padding">
         <div class="container">
           <div class="section-header">
-            <h2>LOCATION</h2>
+            <h2>Products</h2>
+            <p>
+              We use only the highest quality products to ensure exceptional
+              results. Our curated selection features renowned brands trusted by
+              professionals worldwide.
+            </p>
+          </div>
+
+          <div class="owl-carousel clients-carousel">
+            <img src="img/clients/client-1.jpg" alt="" />
+            <img src="img/clients/client-2.jpg" alt="" />
+            <img src="img/clients/client-3.jpg" alt="" />
+            <img src="img/clients/client-4.jpg" alt="" />
+            <img src="img/clients/client-5.jpg" alt="" />
+            <img src="img/clients/client-6.jpg" alt="" />
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387191.33750346623!2d-73.979681!3d40.6974881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1541477355474"
-          width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-    </section><!-- #contact -->
+      </section>
+      <!-- #clients -->
 
-    <!--==========================
+      <!--==========================
+      Our Portfolio Section
+    ============================-->
+      <section id="portfolio" class="wow fadeInUp sec-padding">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Portfolio</h2>
+            <p>
+              Browse through our collection of stunning transformations that
+              showcase our expertise in makeup, hair styling, and skin
+              treatments. Each image represents our dedication to enhancing
+              natural beauty.
+            </p>
+          </div>
+        </div>
+
+        <div class="row photo-gallery">
+          <div class="column">
+            <img
+              src="./New folder (2)/APSI7138.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/ERYI2630.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/GWLR9114.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/IMG_8419.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./New folder (2)/IMG_8431.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/IMG_8493.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/IMG_8497.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/IMG_8498.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./New folder (2)/RJMS5644.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/VNTQ3609.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/VVFM3662.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+            <img
+              src="./New folder (2)/XWTC7787.JPG"
+              style="width: 100%"
+              class="portfolio-item wow fadeInUp"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- #portfolio -->
+
+      <!--==========================
+      Call To Action Section
+    ============================-->
+      <section id="call-to-action" class="wow fadeInUp sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="cta-title">Get Our Service</h3>
+              <p class="cta-text">
+                Your transformation begins here. Contact our beauty experts for
+                a personalized experience.
+              </p>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a
+                class="whatsapp"
+                href="https://wa.me/+923187555002"
+                target="_blank"
+                style="border: none"
+                ><i class="fa fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #call-to-action -->
+
+      <!--==========================
+      Contact Section
+    ============================-->
+      <section id="contact" class="wow fadeInUp sec-padding">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>
+              Allow us to curate your beauty experience. Reserve your private
+              consultation.
+            </p>
+          </div>
+
+          <div class="row contact-info">
+            <div class="col-lg-5">
+              <div class="contact-address">
+                <h3>
+                  Address <span><i class="ion-ios-location-outline"></i></span>
+                </h3>
+                <address>MN-12 Lincon Street, NewYork 12356, USA</address>
+              </div>
+              <div class="contact-phone">
+                <h3>
+                  Phone Number
+                  <span><i class="ion-ios-telephone-outline"></i></span>
+                </h3>
+                <p>
+                  <a href="https://wa.me/+923187555002" target="_blank"
+                    >+92 318 7555002</a
+                  >
+                </p>
+              </div>
+              <div class="contact-email">
+                <h3>
+                  Email <span><i class="ion-ios-email-outline"></i></span>
+                </h3>
+                <p><a href="mailto:info@example.com">name@website.com</a></p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="container">
+                <div class="form">
+                  <!-- Form itself -->
+                  <form
+                    name="sentMessage"
+                    class="well"
+                    id="contactForm"
+                    novalidate
+                  >
+                    <div class="control-group">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Full Name"
+                          id="name"
+                          required
+                          data-validation-required-message="Please enter your name"
+                        />
+                        <p class="help-block"></p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="controls">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                          id="email"
+                          required
+                          data-validation-required-message="Please enter your email"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="controls">
+                        <textarea
+                          rows="10"
+                          cols="100"
+                          class="form-control"
+                          placeholder="Message"
+                          id="message"
+                          required
+                          data-validation-required-message="Please enter your message"
+                          minlength="5"
+                          data-validation-minlength-message="Min 5 characters"
+                          maxlength="999"
+                          style="resize: none"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary pull-right">
+                      Send</button
+                    ><br />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-4 map">
+          <div class="container">
+            <div class="section-header">
+              <h2>LOCATION</h2>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387191.33750346623!2d-73.979681!3d40.6974881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1541477355474"
+            width="100%"
+            height="350"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- #contact -->
+
+      <!--==========================
       About Section
     ============================-->
-    <section id="about" class="wow fadeInUp sec-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>Welcome to Signature by Noor, where beauty meets elegance and luxury. Our salon is dedicated to providing
-            exceptional beauty services tailored to enhance your natural radiance. With a passion for perfection and an
-            eye for detail, we create personalized experiences that leave you feeling confident and glamorous.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 about-img">
-            <img src="img/about-img.png" alt="">
+      <section id="about" class="wow fadeInUp sec-padding">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Us</h2>
+            <p>
+              Welcome to Signature by Noor, where beauty meets elegance and
+              luxury. Our salon is dedicated to providing exceptional beauty
+              services tailored to enhance your natural radiance. With a passion
+              for perfection and an eye for detail, we create personalized
+              experiences that leave you feeling confident and glamorous.
+            </p>
           </div>
+          <div class="row">
+            <div class="col-lg-6 about-img">
+              <img src="img/about-img.png" alt="" />
+            </div>
 
-          <div class="col-lg-6 content">
-            <ul>
-              <li><i class="icon ion-ios-checkmark-outline"></i><b>Hair Services</b> From precision haircuts and
-                stunning color transformations to luxurious treatments and bridal hair styling, our expert stylists use
-                top-quality products to give you the perfect look.</li>
-              <li><i class="icon ion-ios-checkmark-outline"></i><b> Bridal & Special Occasion Makeup</b> Every bride
-                deserves to look and feel flawless on her big day. Our professional makeup artists specialize in
-                creating timeless, camera-ready bridal looks, along with glamorous makeup for engagements, parties, and
-                photoshoots.</li>
-              <li><i class="icon ion-ios-checkmark-outline"></i><b>Skin Treatments</b> Revitalize your skin with our
-                advanced facials, acne treatments, brightening therapies, and anti-aging solutions. We use premium
-                skincare products to ensure a glowing, healthy complexion.</li>
-            </ul>
-            <p>At <b>Signature by Noor</b>, we believe in delivering excellence with a touch of sophistication. Step
-              into our serene sanctuary and let us redefine your beauty experience.</p>
+            <div class="col-lg-6 content">
+              <ul>
+                <li>
+                  <i class="icon ion-ios-checkmark-outline"></i
+                  ><b>Hair Services</b> From precision haircuts and stunning
+                  color transformations to luxurious treatments and bridal hair
+                  styling, our expert stylists use top-quality products to give
+                  you the perfect look.
+                </li>
+                <li>
+                  <i class="icon ion-ios-checkmark-outline"></i
+                  ><b> Bridal & Special Occasion Makeup</b> Every bride deserves
+                  to look and feel flawless on her big day. Our professional
+                  makeup artists specialize in creating timeless, camera-ready
+                  bridal looks, along with glamorous makeup for engagements,
+                  parties, and photoshoots.
+                </li>
+                <li>
+                  <i class="icon ion-ios-checkmark-outline"></i
+                  ><b>Skin Treatments</b> Revitalize your skin with our advanced
+                  facials, acne treatments, brightening therapies, and
+                  anti-aging solutions. We use premium skincare products to
+                  ensure a glowing, healthy complexion.
+                </li>
+              </ul>
+              <p>
+                At <b>Signature by Noor</b>, we believe in delivering excellence
+                with a touch of sophistication. Step into our serene sanctuary
+                and let us redefine your beauty experience.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section><!-- #about -->
+      </section>
+      <!-- #about -->
+    </main>
 
-  </main>
-
-  <!--==========================
+    <!--==========================
     Footer
   ============================-->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Signature by Noor</strong>. All Rights Reserved
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Signature by Noor</strong>. All Rights
+          Reserved
+        </div>
+        <div class="credits">
+          Template by <a href="https://webthemez.com/consulting/">WebThemez</a>
+        </div>
       </div>
-      <div class="credits">
-        Template by <a href="https://webthemez.com/consulting/">WebThemez</a>
-      </div>
-    </div>
-  </footer><!-- #footer -->
+    </footer>
+    <!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="contact/jqBootstrapValidation.js"></script>
-  <script src="contact/contact_me.js"></script>
-  <script src="js/main.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+    <script src="contact/jqBootstrapValidation.js"></script>
+    <script src="contact/contact_me.js"></script>
+    <script src="js/main.js"></script>
 
-  
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Background images that will change sequentially
-  const backgroundImages = [
-    "./assets/backgrounds/bg1.jpg",
-    "./assets/backgrounds/bg2.jpg",
-    "./assets/backgrounds/bg3.jpg",
-    "./assets/backgrounds/bg4.jpg",
-    "./assets/backgrounds/bg5.jpg"
-  ];
-
-  const galleryItems = [
-    {
-      title: "Bridal Collection & Party Makeup Deals",
-      label: "Bridal",
-      images: [
-         "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 1.jpg",
-        "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 2.jpg",
-        "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 3.jpg",
-        "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 4.jpg",
-        "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 5.jpg",
-        "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 6.jpg"
-      ]
-    },
-   
-    {
-      title: "Hair Styling",
-      label: "Hair",
-      images: [
-         "./deals/HAIR DEALS/HAIR 1.jpg",
-        "./deals/HAIR DEALS/HAIR 2.jpg",
-        "./deals/HAIR DEALS/HAIR 3.jpg",
-        "./deals/HAIR DEALS/HAIR 4.jpg",
-        "./deals/HAIR DEALS/HAIR 5.jpg",
-        "./deals/HAIR DEALS/HAIR 6.jpg",
-        "./deals/HAIR DEALS/HAIR 7.jpg",
-        "./deals/HAIR DEALS/HAIR 8.jpg"
-      ]
-    },
-    {
-      title: "Skin Treatments",
-      label: "Skin",
-      images: [
-       "./deals/SKIN DEAL/SKIN 1 (1).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (2).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (3).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (4).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (5).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (6).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (7).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (8).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (9).jpg",
-        "./deals/SKIN DEAL/SKIN 1 (10).jpg"
-      ]
-    },
-     {
-      title: "Wax Deals",
-      label: "Wax",
-      images: [
-       "./deals/WAX DEAL/WAX1 (1).jpg",
-        "./deals/WAX DEAL/WAX1 (2).jpg",
-        "./deals/WAX DEAL/WAX1 (3).jpg",
-        "./deals/WAX DEAL/WAX1 (4).jpg",
-        "./deals/WAX DEAL/WAX1 (5).jpg",
-        "./deals/WAX DEAL/WAX1 (6).jpg",
-        "./deals/WAX DEAL/WAX1 (7).jpg",
-        "./deals/WAX DEAL/WAX1 (8).jpg"
-      ]
-    },
-    {
-      title: "Body Deals",
-      label: "Body",
-      images: [
-        "./deals/WAX DEAL/WAX1 (1).jpg",
-        "./deals/WAX DEAL/WAX1 (2).jpg",
-        "./deals/WAX DEAL/WAX1 (3).jpg",
-        "./deals/WAX DEAL/WAX1 (4).jpg",
-        "./deals/WAX DEAL/WAX1 (5).jpg",
-        "./deals/WAX DEAL/WAX1 (6).jpg",
-        "./deals/WAX DEAL/WAX1 (7).jpg",
-        "./deals/WAX DEAL/WAX1 (8).jpg"
-      ]
-    }
-  ];
-
-  const container = document.getElementById("gallery-container");
-  container.innerHTML = '';
-  
-  let bgIndex = 0;
-
-  galleryItems.forEach(function (item, index) {
-    const collectionId = `collection-${index}`;
-    
-    // Create container for the gallery
-    const galleryDiv = document.createElement('div');
-    galleryDiv.className = `gallery-${collectionId}`;
-    galleryDiv.style.display = 'none';
-    
-    // Add hidden gallery links
-    item.images.forEach(function(imgSrc) {
-      const link = document.createElement('a');
-      link.href = imgSrc;
-      galleryDiv.appendChild(link);
-    });
-    
-    // Add this hidden gallery to the document
-    document.body.appendChild(galleryDiv);
-
-    const col = document.createElement('div');
-    col.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
-
-    const galleryItem = document.createElement('div');
-    galleryItem.className = 'gallery-item wow fadeInUp';
-    
-    // Use one of the background images that changes sequentially
-    galleryItem.style.backgroundImage = `url(${backgroundImages[bgIndex]})`;
-    bgIndex = (bgIndex + 1) % backgroundImages.length;
-
-    const mainLink = document.createElement('a');
-    mainLink.href = 'javascript:void(0);';
-    mainLink.className = 'open-gallery-collection';
-    mainLink.setAttribute('data-collection-id', collectionId);
-
-    const img = document.createElement('img');
-    img.src = item.images[0]; // Use the first image as thumbnail
-    img.alt = item.title;
-
-    const overlay = document.createElement('div');
-    overlay.className = 'gallery-overlay';
-
-    const info = document.createElement('div');
-    info.className = 'gallery-info';
-
-    const title = document.createElement('h2');
-    title.className = 'wow fadeInUp';
-    title.textContent = item.title;
-
-    const label = document.createElement('span');
-    label.className = 'gallery-label wow fadeInUp';
-    label.textContent = item.label;
-
-    info.appendChild(title);
-    info.appendChild(label);
-    overlay.appendChild(info);
-    mainLink.appendChild(img);
-    mainLink.appendChild(overlay);
-    galleryItem.appendChild(mainLink);
-    col.appendChild(galleryItem);
-    container.appendChild(col);
-    
-    // Change background image every 5 seconds
-    let itemBgIndex = 0;
-    setInterval(function() {
-      itemBgIndex = (itemBgIndex + 1) % backgroundImages.length;
-      galleryItem.style.backgroundImage = `url(${backgroundImages[itemBgIndex]})`;
-    }, 5000);
-  });
-
-  // Initialize click events after all elements are created
-  $(document).ready(function() {
-    $('.open-gallery-collection').on('click', function(e) {
-      e.preventDefault();
-      
-      const collectionId = $(this).attr('data-collection-id');
-      const items = [];
-      
-      // Get all images from this gallery
-      $(`.gallery-${collectionId} a`).each(function() {
-        items.push({
-          src: $(this).attr('href')
-        });
-      });
-      
-      // Open Magnific Popup with these items
-      $.magnificPopup.open({
-        items: items,
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 2]
-        },
-        type: 'image'
-      });
-    });
-  });
-});
-
- let currentIndex = 0;
-        const totalCards = 6;
-        let cardsPerSlide = 3;
-        let totalSlides = Math.ceil(totalCards / cardsPerSlide);
-        
-        const images = [
-            '/api/placeholder/350/500',
-            '/api/placeholder/350/500',
-            '/api/placeholder/350/500',
-            '/api/placeholder/350/500',
-            '/api/placeholder/350/500',
-            '/api/placeholder/350/500'
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Background images that will change sequentially
+        const backgroundImages = [
+          "./assets/backgrounds/bg1.jpg",
+          "./assets/backgrounds/bg2.jpg",
+          "./assets/backgrounds/bg3.jpg",
+          "./assets/backgrounds/bg4.jpg",
+          "./assets/backgrounds/bg5.jpg",
         ];
 
-        function updateCardsPerSlide() {
-            const screenWidth = window.innerWidth;
-            if (screenWidth <= 768) {
-                cardsPerSlide = 1;
-            } else if (screenWidth <= 1200) {
-                cardsPerSlide = 2;
-            } else {
-                cardsPerSlide = 3;
-            }
-            totalSlides = Math.ceil(totalCards / cardsPerSlide);
-            
-            // Update dots
-            updateDots();
-        }
+        const galleryItems = [
+          {
+            title: "Bridal Collection & Party Makeup Deals",
+            label: "Bridal",
+            images: [
+              "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 1.jpg",
+              "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 2.jpg",
+              "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 3.jpg",
+              "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 4.jpg",
+              "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 5.jpg",
+              "./deals/BRIDAL & PARTY MAKEUP/BRIDAL & PARTY 6.jpg",
+            ],
+          },
 
-        function updateDots() {
-            const dotsContainer = document.querySelector('.dots-container');
-            dotsContainer.innerHTML = '';
-            
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('span');
-                dot.className = 'dot';
-                if (i === currentIndex) dot.classList.add('active');
-                dot.onclick = () => currentSlide(i + 1);
-                dotsContainer.appendChild(dot);
-            }
-        }
+          {
+            title: "Hair Styling",
+            label: "Hair",
+            images: [
+              "./deals/HAIR DEALS/HAIR 1.jpg",
+              "./deals/HAIR DEALS/HAIR 2.jpg",
+              "./deals/HAIR DEALS/HAIR 3.jpg",
+              "./deals/HAIR DEALS/HAIR 4.jpg",
+              "./deals/HAIR DEALS/HAIR 5.jpg",
+              "./deals/HAIR DEALS/HAIR 6.jpg",
+              "./deals/HAIR DEALS/HAIR 7.jpg",
+              "./deals/HAIR DEALS/HAIR 8.jpg",
+            ],
+          },
+          {
+            title: "Skin Treatments",
+            label: "Skin",
+            images: [
+              "./deals/SKIN DEAL/SKIN 1 (1).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (2).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (3).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (4).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (5).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (6).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (7).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (8).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (9).jpg",
+              "./deals/SKIN DEAL/SKIN 1 (10).jpg",
+            ],
+          },
+          {
+            title: "Wax Deals",
+            label: "Wax",
+            images: [
+              "./deals/WAX DEAL/WAX1 (1).jpg",
+              "./deals/WAX DEAL/WAX1 (2).jpg",
+              "./deals/WAX DEAL/WAX1 (3).jpg",
+              "./deals/WAX DEAL/WAX1 (4).jpg",
+              "./deals/WAX DEAL/WAX1 (5).jpg",
+              "./deals/WAX DEAL/WAX1 (6).jpg",
+              "./deals/WAX DEAL/WAX1 (7).jpg",
+              "./deals/WAX DEAL/WAX1 (8).jpg",
+            ],
+          },
+          {
+            title: "Body Deals",
+            label: "Body",
+            images: [
+              "./deals/WAX DEAL/WAX1 (1).jpg",
+              "./deals/WAX DEAL/WAX1 (2).jpg",
+              "./deals/WAX DEAL/WAX1 (3).jpg",
+              "./deals/WAX DEAL/WAX1 (4).jpg",
+              "./deals/WAX DEAL/WAX1 (5).jpg",
+              "./deals/WAX DEAL/WAX1 (6).jpg",
+              "./deals/WAX DEAL/WAX1 (7).jpg",
+              "./deals/WAX DEAL/WAX1 (8).jpg",
+            ],
+          },
+        ];
 
-        function moveSlide(direction) {
-            currentIndex += direction;
-            
-            if (currentIndex >= totalSlides) {
-                currentIndex = 0;
-            } else if (currentIndex < 0) {
-                currentIndex = totalSlides - 1;
-            }
-            
-            updateCarousel();
-        }
+        const container = document.getElementById("gallery-container");
+        container.innerHTML = "";
 
-        function currentSlide(slideIndex) {
-            currentIndex = slideIndex - 1;
-            updateCarousel();
-        }
+        let bgIndex = 0;
 
-        function updateCarousel() {
-            const track = document.getElementById('carouselTrack');
-            const cards = track.children;
-            
-            if (cards.length === 0) return;
-            
-            const cardWidth = cards[0].offsetWidth + 20; // card width + gap
-            const translateX = -currentIndex * cardWidth * cardsPerSlide;
-            
-            track.style.transform = `translateX(${translateX}px)`;
-            
-            // Update dots
-            const dots = document.querySelectorAll('.dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
+        galleryItems.forEach(function (item, index) {
+          const collectionId = `collection-${index}`;
+
+          // Create container for the gallery
+          const galleryDiv = document.createElement("div");
+          galleryDiv.className = `gallery-${collectionId}`;
+          galleryDiv.style.display = "none";
+
+          // Add hidden gallery links
+          item.images.forEach(function (imgSrc) {
+            const link = document.createElement("a");
+            link.href = imgSrc;
+            galleryDiv.appendChild(link);
+          });
+
+          // Add this hidden gallery to the document
+          document.body.appendChild(galleryDiv);
+
+          const col = document.createElement("div");
+          col.className = "col-lg-4 col-md-6 col-sm-12 mb-4";
+
+          const galleryItem = document.createElement("div");
+          galleryItem.className = "gallery-item wow fadeInUp";
+
+          // Use one of the background images that changes sequentially
+          galleryItem.style.backgroundImage = `url(${backgroundImages[bgIndex]})`;
+          bgIndex = (bgIndex + 1) % backgroundImages.length;
+
+          const mainLink = document.createElement("a");
+          mainLink.href = "javascript:void(0);";
+          mainLink.className = "open-gallery-collection";
+          mainLink.setAttribute("data-collection-id", collectionId);
+
+          const img = document.createElement("img");
+          img.src = item.images[0]; // Use the first image as thumbnail
+          img.alt = item.title;
+
+          const overlay = document.createElement("div");
+          overlay.className = "gallery-overlay";
+
+          const info = document.createElement("div");
+          info.className = "gallery-info";
+
+          const title = document.createElement("h2");
+          title.className = "wow fadeInUp";
+          title.textContent = item.title;
+
+          const label = document.createElement("span");
+          label.className = "gallery-label wow fadeInUp";
+          label.textContent = item.label;
+
+          info.appendChild(title);
+          info.appendChild(label);
+          overlay.appendChild(info);
+          mainLink.appendChild(img);
+          mainLink.appendChild(overlay);
+          galleryItem.appendChild(mainLink);
+          col.appendChild(galleryItem);
+          container.appendChild(col);
+
+          // Change background image every 5 seconds
+          let itemBgIndex = 0;
+          setInterval(function () {
+            itemBgIndex = (itemBgIndex + 1) % backgroundImages.length;
+            galleryItem.style.backgroundImage = `url(${backgroundImages[itemBgIndex]})`;
+          }, 5000);
+        });
+
+        // Initialize click events after all elements are created
+        $(document).ready(function () {
+          $(".open-gallery-collection").on("click", function (e) {
+            e.preventDefault();
+
+            const collectionId = $(this).attr("data-collection-id");
+            const items = [];
+
+            // Get all images from this gallery
+            $(`.gallery-${collectionId} a`).each(function () {
+              items.push({
+                src: $(this).attr("href"),
+              });
             });
+
+            // Open Magnific Popup with these items
+            $.magnificPopup.open({
+              items: items,
+              gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 2],
+              },
+              type: "image",
+            });
+          });
+        });
+      });
+
+      let currentIndex = 0;
+      const totalCards = 6;
+      let cardsPerSlide = 3;
+      let totalSlides = Math.ceil(totalCards / cardsPerSlide);
+
+      const images = [
+        "./New folder (2)/APSI7138.JPG",
+        "./PORTFOLIO/1 (10).jpg",
+        "./img/services/1.jpg",
+        "./img/services/2.jpg",
+        "./img/services/3.jpg",
+        "./img/services/4.jpg",
+      ];
+
+      function updateCardsPerSlide() {
+        const screenWidth = window.innerWidth;
+        if (screenWidth <= 768) {
+          cardsPerSlide = 1;
+        } else if (screenWidth <= 1200) {
+          cardsPerSlide = 2;
+        } else {
+          cardsPerSlide = 3;
+        }
+        totalSlides = Math.ceil(totalCards / cardsPerSlide);
+
+        // Update dots
+        updateDots();
+      }
+
+      function updateDots() {
+        const dotsContainer = document.querySelector(".dots-container");
+        dotsContainer.innerHTML = "";
+
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement("span");
+          dot.className = "dot";
+          if (i === currentIndex) dot.classList.add("active");
+          dot.onclick = () => currentSlide(i + 1);
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function moveSlide(direction) {
+        currentIndex += direction;
+
+        if (currentIndex >= totalSlides) {
+          currentIndex = 0;
+        } else if (currentIndex < 0) {
+          currentIndex = totalSlides - 1;
         }
 
-        function openModal(imageIndex) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            
-            modalImage.src = images[imageIndex];
-            modal.style.display = 'block';
-            
-            // Prevent body scroll when modal is open
-            document.body.style.overflow = 'hidden';
+        updateCarousel();
+      }
+
+      function currentSlide(slideIndex) {
+        currentIndex = slideIndex - 1;
+        updateCarousel();
+      }
+
+      function updateCarousel() {
+        const track = document.getElementById("carouselTrack");
+        const cards = track.children;
+
+        if (cards.length === 0) return;
+
+        const cardWidth = cards[0].offsetWidth + 20; // card width + gap
+        const translateX = -currentIndex * cardWidth * cardsPerSlide;
+
+        track.style.transform = `translateX(${translateX}px)`;
+
+        // Update dots
+        const dots = document.querySelectorAll(".dot");
+        dots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentIndex);
+        });
+      }
+
+      function openModal(imageIndex) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+
+        modalImage.src = images[imageIndex];
+        modal.style.display = "block";
+
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+
+        // Restore body scroll
+        document.body.style.overflow = "auto";
+      }
+
+      // Auto-slide functionality (optional)
+      setInterval(() => {
+        moveSlide(1);
+      }, 5000);
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          moveSlide(-1);
+        } else if (e.key === "ArrowRight") {
+          moveSlide(1);
+        } else if (e.key === "Escape") {
+          closeModal();
         }
+      });
 
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-            
-            // Restore body scroll
-            document.body.style.overflow = 'auto';
+      // Touch/swipe support for mobile
+      let startX = 0;
+      let endX = 0;
+
+      document.addEventListener("touchstart", (e) => {
+        startX = e.changedTouches[0].screenX;
+      });
+
+      document.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = startX - endX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            moveSlide(1); // Swipe left - next slide
+          } else {
+            moveSlide(-1); // Swipe right - previous slide
+          }
         }
+      }
 
-        // Auto-slide functionality (optional)
-        setInterval(() => {
-            moveSlide(1);
-        }, 5000);
+      // Initialize carousel on page load
+      window.addEventListener("load", () => {
+        updateCardsPerSlide();
+        updateCarousel();
+      });
 
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                moveSlide(-1);
-            } else if (e.key === 'ArrowRight') {
-                moveSlide(1);
-            } else if (e.key === 'Escape') {
-                closeModal();
-            }
-        });
-
-        // Touch/swipe support for mobile
-        let startX = 0;
-        let endX = 0;
-
-        document.addEventListener('touchstart', (e) => {
-            startX = e.changedTouches[0].screenX;
-        });
-
-        document.addEventListener('touchend', (e) => {
-            endX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            const swipeThreshold = 50;
-            const diff = startX - endX;
-            
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0) {
-                    moveSlide(1); // Swipe left - next slide
-                } else {
-                    moveSlide(-1); // Swipe right - previous slide
-                }
-            }
-        }
-
-        // Initialize carousel on page load
-        window.addEventListener('load', () => {
-            updateCardsPerSlide();
-            updateCarousel();
-        });
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            updateCardsPerSlide();
-            updateCarousel();
-        });
- 
-</script>
-</body>
-
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        updateCardsPerSlide();
+        updateCarousel();
+      });
+    </script>
+  </body>
 </html>
