@@ -128,107 +128,168 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-  padding: 20px 0;
-  height: 84px;
-  transition: all 0.5s;
-  z-index: 997;
-  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.06);
-  background: #0b111f;
-}
 
-#header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-#header #logo h1 {
-  font-size: 34px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
+  .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+           
+        }
+   #header {
+            padding: 20px 0;
+            height: 84px;
+            transition: all 0.5s;
+            z-index: 997;
+            box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.06);
+            background: #0b111f;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
 
-#header #logo h1 a {
-  color: #c802a0;
-  line-height: 1;
-  display: inline-block;
-}
+        #header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-#header #logo h1 a span {
-  color: #f8b4ff;
-  padding: 0 1px;
-  border-radius: 0 10px;
-}
+        #header #logo h1 {
+            font-size: 34px;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+        }
 
-#header #logo img {
-  padding: 0;
-  margin: 0;
-}
+        #header #logo h1 a {
+            color: #c802a0;
+            line-height: 1;
+            display: inline-block;
+        }
 
-/* Mobile toggle button spacing fix */
-@media (max-width: 768px) {
-  #header {
-    padding: 20px 0;
-    height: 74px;
-  }
+        #header #logo h1 a span {
+            color: #f8b4ff;
+            padding: 0 1px;
+            border-radius: 0 10px;
+        }
 
-  #header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-  }
+        #header #logo img {
+            padding: 0;
+            margin: 0;
+            max-height: 50px;
+            width: auto;
+        }
 
-  #header #logo {
-    flex: 1;
-    margin-right: 15px;
-  }
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
 
-  #header #logo h1 {
-    font-size: 28px;
-    margin: 0;
-  }
+        .nav-menu li {
+            position: relative;
+        }
 
-  #header #logo img {
-    max-height: 40px;
-  }
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-  /* Ensure toggle button has proper spacing */
-  #nav-menu-container {
-    margin-left: auto;
-    padding-left: 15px;
-  }
+        .nav-menu a:hover {
+            color: #c802a0;
+        }
 
-  /* Mobile menu toggle button */
-  .mobile-nav-toggle {
-    cursor: pointer;
-    display: block;
-    line-height: 0;
-    transition: 0.5s;
-    margin-left: 15px;
-  }
+        .nav-menu .menu-active a {
+            color: #c802a0;
+        }
 
-  .mobile-nav-toggle i {
-    color: #c802a0;
-    font-size: 24px;
-  }
-}
+        .nav-menu button {
+            background: #c802a0;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
 
-/* WhatsApp button icon alignment fix */
-.nav-menu button li a {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+        .nav-menu button:hover {
+            background: #f8b4ff;
+        }
 
-.nav-menu button li a i {
-  vertical-align: middle;
-  line-height: 1;
-}
+        .nav-menu button li {
+            list-style: none;
+        }
+
+        .nav-menu button li a {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-menu button li a i {
+            vertical-align: middle;
+            line-height: 1;
+        }
+
+        /* Mobile toggle button spacing fix */
+        @media (max-width: 768px) {
+            #header {
+                padding: 20px 0;
+                height: 74px;
+            }
+
+            #header .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px;
+            }
+
+            #header #logo {
+                flex: 1;
+                margin-right: 15px;
+            }
+
+            #header #logo h1 {
+                font-size: 28px;
+                margin: 0;
+            }
+
+            #header #logo img {
+                max-height: 40px;
+            }
+
+            /* Ensure toggle button has proper spacing */
+            #nav-menu-container {
+                margin-left: auto;
+                padding-left: 15px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            /* Mobile menu toggle button */
+            .mobile-nav-toggle {
+                cursor: pointer;
+                display: block;
+                line-height: 0;
+                transition: 0.5s;
+                margin-left: 15px;
+            }
+
+            .mobile-nav-toggle i {
+                color: #c802a0;
+                font-size: 24px;
+            }
+        }
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
